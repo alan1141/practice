@@ -1,0 +1,36 @@
+/*
+ * Soulation6.h
+ *
+ *  Created on: Feb 14, 2018
+ *      Author: alan
+ */
+
+#ifndef EASY_SOULATION6_H_
+#define EASY_SOULATION6_H_
+
+#include<cstddef>
+#include<vector>
+
+namespace leetcodeeasy {
+
+//struct TreeNode {
+//    int val;
+//    TreeNode *left;
+//    TreeNode *right;
+//    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+//};
+
+class Soulation6 {
+public:
+	Soulation6();
+	virtual ~Soulation6();
+	bool isSymmetric(TreeNode* root);
+private:
+	void symmetric(TreeNode* root, std::vector<TreeNode *> &v, int index);
+	void print_vector(std::vector<TreeNode *> &v);
+	int getlevel(TreeNode* root);
+};
+
+} /* namespace leetcodeeasy */
+
+#endif /* EASY_SOULATION6_H_ */
